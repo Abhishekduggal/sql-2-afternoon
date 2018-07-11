@@ -90,3 +90,14 @@ Part 5
 
 /* select distinct company from customer; */
 
+
+Part 6 
+
+/* SELECT * FROM practice_delete; */
+
+/* delete from practice_delete where type = 'bronze'; */
+
+/* delete from practice_delete where type = 'silver'; */
+
+/* delete from practice_delete where value = 150; */
+
