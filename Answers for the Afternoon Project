@@ -101,3 +101,84 @@ Part 6
 
 /* delete from practice_delete where value = 150; */
 
+
+Part 7 - Ecommerce Simple Build
+
+/* create table users (
+  users_id INTEGER Primary key autoincrement,
+  first_name varchar(60),
+  last_name varchar(60),
+  email varchar(160)
+  ) */
+
+/* create table products (
+  product_id integer primary key autoincrement,
+  product_name varchar(250),
+  price int
+  )
+ */
+ 
+/*  create table orders (
+   order_id varchar(10),
+   product_id REFERENCES products(product_id),
+   users_id REFERENCES users(users_id)
+   ) */
+   
+/*   insert into users (first_name, last_name, email) 
+  values ('Tim', 'Hook', 'tim@hook.com'),
+          ('Tom', 'Jerry', 'tom@jerry.com'),
+          ('Tim', 'Dalton', 'tim@dalton.com'),
+          ('John', 'Kwn', 'John@kwn.com')
+/*            */
+
+/* insert into products (product_name, price)
+values ('DrangoPizza', 12),
+('Coke', 6),
+('Pie', 15),
+('Bread', 4),
+('Ice', 2),
+('Donuts', 3),
+('Chair', 100),
+('Wipes', 4),
+('Lysol', 5),
+('VeggiePatty', 10),
+('LocalPizza', 16) */
+
+
+/* select * from products */
+
+/* select * from users; */
+
+/* insert into orders (order_id, product_id, users_id)   
+   values('ECOM1', 1, 2),
+   ('ECOM1', 1, 2),
+   ('ECOM1', 5, 2),
+   ('ECOM1', 6, 2),
+   ('ECOM1', 4, 2),
+   ('ECOM1', 7, 2),
+   ('ECOM1', 2, 2)  */
+
+/*  select * from orders; */
+    
+
+/* insert into orders (order_id, product_id, users_id)   
+   values('ECOM2', 1, 3),
+   ('ECOM2', 1, 3),
+   ('ECOM2', 5, 3),
+   ('ECOM2', 6, 3),
+   ('ECOM2', 4, 3),
+   ('ECOM2', 7, 3),
+   ('ECOM2', 2, 3)  */
+   
+ 
+/*  insert into orders (order_id, product_id, users_id)   
+   values('ECOM3', 3, 1),
+   ('ECOM3', 1, 1),
+   ('ECOM3', 5, 1),
+   ('ECOM3', 6, 1),
+   ('ECOM3', 4, 1) */
+/*    
+
+select sum(products.price), products.product_id 
+from orders JOIN products on orders.product_id = products.product_id  
+group by orders.users_id */
