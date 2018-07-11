@@ -67,3 +67,17 @@ Part 3
 /*  update track set composer = "The darkness around us" where 
  genreid = (select genreid from genre where name = 'Metal') 
  and composer is null; */
+
+
+Part 4 
+
+/* select count(*), genre.name from track join genre on track.genreid = genre.genreid
+group by genre.name; */
+
+/* select count(*), genre.name from track join genre on track.genreid = genre.genreid 
+where genre.name = 'Pop' or genre.name = 'Rock'
+group by genre.name; */
+
+/* select count(*), artist.name from album join artist on artist.artistid = album.artistid 
+group by album.artistid */
+
