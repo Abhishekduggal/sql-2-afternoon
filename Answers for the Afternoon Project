@@ -1,1 +1,34 @@
+Part 1 
 
+/* SELECT * FROM Invoice;
+ */
+/* SELECT * FROM InvoiceLine WHERE UnitPrice > 0.99; */
+
+/* SELECT * FROM Invoice a
+JOIN InvoiceLine i ON a.invoiceId = i.invoiceId WHERE i.UnitPrice > 0.99; */
+ 
+/*  SELECT c.FirstName, c.LastName FROM Customer c 
+ JOIN Employee e ON c.SupportRepId = e.EmployeeId; */
+ 
+/*  SELECT al.Title, ar.Name from Album al 
+ JOIN Artist ar ON al.ArtistId = ar.ArtistId; */
+ 
+/*  SELECT pt.TrackId from PlaylistTrack pt
+ JOIN playlist pl ON pt.PlaylistId = pl.PlaylistId 
+ WHERE pl.Name = 'Music'; */
+ 
+/* SELECT t.Name from Track t 
+JOIN PlaylistTrack pt ON pt.TrackId = t.TrackId
+WHERE pt.PlaylistId = 5  */
+
+/*  SELECT t.Name from Track t 
+ JOIN PlaylistTrack pt ON pt.TrackId = t.TrackId
+ JOIN playlist pl ON pt.PlaylistId = pl.PlaylistId  */
+ 
+/*  SELECT t.Name, a.Title from Track t 
+ JOIN Album a ON a.AlbumId = t.AlbumId
+ JOIN GENRE g ON g.GenreId = t.GenreId
+ WHERE g.Name = 'Alternative' */
+ 
+ 
+ 
