@@ -81,3 +81,12 @@ group by genre.name; */
 /* select count(*), artist.name from album join artist on artist.artistid = album.artistid 
 group by album.artistid */
 
+
+Part 5 
+
+/* select distinct composer from track; */
+
+/* select distinct billingpostalcode from invoice; */
+
+/* select distinct company from customer; */
+
