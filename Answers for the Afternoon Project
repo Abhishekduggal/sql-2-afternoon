@@ -31,4 +31,24 @@ WHERE pt.PlaylistId = 5  */
  WHERE g.Name = 'Alternative' */
  
  
+ Part 2 
  
+ /*  SELECT * from invoice 
+ where invoiceid IN (Select invoiceid from invoiceline where unitprice > 0.99)  */
+ 
+/*  select * from playlisttrack where 
+ playlistid in (select playlistid from playlist where playlist.name = 'Music') */
+ 
+/*  select t.name from track t where 
+ trackid in (select trackid from playlisttrack where playlistid =5); */
+ 
+/*  select * from track t where 
+ genreid in (select genreid from genre where name = 'Comedy'); */
+ 
+/*  select * from track where 
+ albumid in (select albumid from album where name = 'Fireball') */
+ 
+/*  select * from track where 
+ albumid in (select albumid from album where artistid in (select artistid from artist where name = 'Queen')); */
+ 
+
